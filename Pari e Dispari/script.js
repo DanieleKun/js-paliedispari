@@ -15,7 +15,7 @@ const userNum = parseInt(prompt('Scegli un numero da 1 a 5'));
 
 // Numero random PC
 const pcNum = randomNum(1, 5);
-console.log(pcNum);
+// console.log(pcNum);
 
 function randomNum(numMin, numMax){
     let resultNum = Math.floor(Math.random() * (numMax - numMin + 1)) + numMin;
@@ -24,18 +24,26 @@ function randomNum(numMin, numMax){
 
 // Somma dei numeri
 const sumNum = userNum + pcNum;
-console.log(sumNum);
+// console.log(sumNum);
 
 // Stabiliamo se la somma dei due numeri è pari o dispari
 let sumNumCheck;
-
 if (sumNum % 2 === 0){
     sumNumCheck = "pari";
 } else {
     sumNumCheck = "dispari";
 }
 
-console.log(sumNumCheck);
+
+// function evenOdd(sumCheck) {
+//     if (sumCheck % 2 === 0) {
+//         return "pari";
+
+//     } else {
+//         return "dispari";
+//     }
+// }
+// console.log(sumNumCheck);
 
 // Dichiariamo chi ha vinto
 if (choiceOddEven === sumNumCheck){
