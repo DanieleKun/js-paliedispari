@@ -9,13 +9,15 @@ console.log(userWord);
 let reverseUserWord = reverseWord(userWord);
 
 
-if (userWord == reverseUserWord) {
+if (userWord.toUpperCase() == reverseUserWord.toUpperCase()) {
   console.log('la parola è palindroma');
 } else {
   console.log('la parola non è palindroma');
 }
 
-function reverseWord(str) {
-  let strReverse = str.split('').reverse().join('');
-  return strReverse;
+function reverseWord(wordRev) {
+  let reverse = wordRev.split('').reverse().join('');
+  return reverse;
 }
+
+
