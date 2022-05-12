@@ -7,15 +7,15 @@
 
 // Scelta pari o dispari
 const choiceOddEven = prompt('Scegli "pari" o "dispari"');
-// console.log(choiceOddEven);
+ console.log(choiceOddEven);
 
 // Scelta numero giocatore
 const userNum = parseInt(prompt('Scegli un numero da 1 a 5'));
-// console.log(choiceNum);
+ console.log(choiceNum);
 
 // Numero random PC
 const pcNum = randomNum(1, 5);
-// console.log(pcNum);
+ console.log(pcNum);
 
 function randomNum(numMin, numMax){
     let resultNum = Math.floor(Math.random() * (numMax - numMin + 1)) + numMin;
@@ -33,17 +33,6 @@ if (sumNum % 2 === 0){
 } else {
     sumNumCheck = "dispari";
 }
-
-
-// function evenOdd(sumCheck) {
-//     if (sumCheck % 2 === 0) {
-//         return "pari";
-
-//     } else {
-//         return "dispari";
-//     }
-// }
-// console.log(sumNumCheck);
 
 // Dichiariamo chi ha vinto
 if (choiceOddEven === sumNumCheck){
